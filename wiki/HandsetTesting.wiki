@@ -1,0 +1,10 @@
+#summary If you wish to contribute to this page, please contact the authors
+
+= Introduction =
+
+Here's a list of handsets we've tested m-im on, including emulators
+
+= Details =
+
+|| *Phone* || *OS* || *Version* || *Who* || *Date* || *Install* || *Setup* || *Notes* ||
+|| MicroEmulator || Linux || v1.0.0 || Mark || Jul 09 || Direct || Works Fine || Some issues - working on fixes ||
