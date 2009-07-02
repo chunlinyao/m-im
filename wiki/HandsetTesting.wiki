@@ -8,3 +8,4 @@ Here's a list of handsets we've tested m-im on, including emulators
 
 || *Phone* || *OS* || *Version* || *Who* || *Date* || *Install* || *Setup* || *Notes* ||
 || MicroEmulator || Linux || v1.0.0 || Mark || Jul 09 || Direct || Works Fine || Some issues - working on fixes ||
+|| Nokia E71 || S60 || dev || Mark || Jul 09 || Bluetooth || OK || work in progress ||
