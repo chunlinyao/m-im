@@ -11,7 +11,9 @@ Here's a list of handsets we've tested m-im on, including emulators
 || Nokia E71 || S60 || dev || Mark || Jul 09 || BT || OK || work in progress ||
 || Nokia 6120c || S60 || dev || Mark || Jul 09 || BT || OK || no issues ||
 
+
 = Glossary =
+
  * dev - Latest development version (probably unreleased, not stable)
  * S40 / S60 - Series 40 or Series 60 Nokia Phone OS
  * BT - Bluetooth, IR = Infrared, Cable = USB connection, OTA = Over the air (download)
