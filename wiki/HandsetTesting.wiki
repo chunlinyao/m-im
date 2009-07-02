@@ -11,7 +11,7 @@ Here's a list of handsets we've tested m-im on, including emulators
 || Nokia E71 || S60 || dev || Mark || Jul 09 || BT || OK || work in progress ||
 || Nokia 6120c || S60 || dev || Mark || Jul 09 || BT || OK || no issues ||
 
-
+----
 = Glossary =
 
  * dev - Latest development version (probably unreleased, not stable)
