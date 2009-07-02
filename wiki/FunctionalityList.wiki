@@ -1,0 +1,14 @@
+#summary List of supported features and planned future work
+
+= Introduction =
+
+Here's a brief overview of m-im's current functionality
+
+= Details =
+
+== Network Connectivity ==
+ * Tested using GPRS under S40
+ * Tested using GRPS, 3G, 3.5G and Wifi using S60
+ * Supports SSL encryption to Google Talk
+ * Supports SSL to your own XMPP/Jabber server using self-signed certs
+ * Automatic connection [and re-connection (under active development)]
