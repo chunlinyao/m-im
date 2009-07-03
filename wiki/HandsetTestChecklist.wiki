@@ -10,9 +10,9 @@ This is a checklist of all the things we should check before releasing a version
 Via Bluetooth, Infrared, Cable or OTA - does the application install properly and without errors? You will get the default security warnings, this is expected normal behaviour.
 
 == First Run ==
-Does the application start properly?
-Loading... splash screen displayed, and then shows Accounts/Profiles page?
-menu and quit options in the correct location for your handset (left menu, right quit on Nokia)
+* Does the application start properly?
+* Loading... splash screen displayed, and then shows Accounts/Profiles page?
+* Are the menu and quit options in the correct location for your handset (left menu, right quit on Nokia)
 
 Quit the application - does it exit gracefully?
 
