@@ -7,7 +7,8 @@ This gives a high-level overview of the changes in each release
 = Details =
 
 == v1.1.0 ==
-Application Data NOT backwards compatible with v1.0.0!!!
+*Application Data NOT backwards compatible with v1.0.0*
+
 Either uninstall v1.0.0 then install v1.1.0 or answer "No" if 
 your phone prompts you to keep the existing application data
 
