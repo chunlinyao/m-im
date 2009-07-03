@@ -14,8 +14,20 @@ Does the application start properly?
 Loading... splash screen displayed, and then shows Accounts/Profiles page?
 menu and quit options in the correct location for your handset (left menu, right quit on Nokia)
 
+Quit the application - does it exit gracefully?
+
+Restart then go to:
+
 Menu -> New - Displays new profile page with sensible default values?
 
 == Google Talk ==
-Add your google talk account using non-SSL connections, does it connect ok?
+Add your google talk account using non-SSL with port 5222, does it connect ok?
 Make a note of connection type: GPRS, 3/3.5G, Wifi etc
+Send a message to a contact and get a reply to ensure two-way traffic is working
+
+Exit the application and restart it, then edit the profile and change to SSL with port 5223. Reconnect and test sending a message again. If the profile has vanished, you have a problem with the record store and this is a reportable bug! It shouldn't happen though! ;-)
+
+Leave connected for at least a few minutes, preferably 15-30 mins to ensure the keepalive is working ok.
+
+Does your buddy list load as expected, including Show/hide offline?
+Does the application hide (switch to the background) successfully using the hide option?
