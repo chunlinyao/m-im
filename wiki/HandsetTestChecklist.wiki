@@ -1,0 +1,21 @@
+#summary If you are testing a release, please ensure this is all done
+
+= Introduction =
+
+This is a checklist of all the things we should check before releasing a version of code as "Stable"
+
+= Details =
+
+== Installation ==
+Via Bluetooth, Infrared, Cable or OTA - does the application install properly and without errors? You will get the default security warnings, this is expected normal behaviour.
+
+== First Run ==
+Does the application start properly?
+Loading... splash screen displayed, and then shows Accounts/Profiles page?
+menu and quit options in the correct location for your handset (left menu, right quit on Nokia)
+
+Menu -> New - Displays new profile page with sensible default values?
+
+== Google Talk ==
+Add your google talk account using non-SSL connections, does it connect ok?
+Make a note of connection type: GPRS, 3/3.5G, Wifi etc
