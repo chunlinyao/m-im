@@ -6,13 +6,19 @@ This gives a high-level overview of the changes in each release
 
 = Details =
 
+== v1.3.0 ==
+
+Preview:
+
+ * Improved handling of network disconnections
+
 == v1.2.0 ==
 *Application Data NOT backwards compatible with v1.1.0*
 
 Either uninstall v1.1.0 then install v1.2.0 or answer "No" if your phone prompts you to keep the existing application data
 
  * New Keepalive Option
-    * Added XmppPinger class which sends an IQ PING packet (XMPP standard) every 5 minutes to the server, to keep the connection alive.
+    * Added XMPP Pinger class which sends an IQ PING packet (XMPP standard) every 5 minutes to the server, to keep the connection alive.
 
  * Some UI changes
 
