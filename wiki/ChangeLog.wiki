@@ -6,11 +6,28 @@ This gives a high-level overview of the changes in each release
 
 = Details =
 
+== v1.2.0 ==
+*Application Data NOT backwards compatible with v1.1.0*
+
+Either uninstall v1.1.0 then install v1.2.0 or answer "No" if your phone prompts you to keep the existing application data
+
+ * New Keepalive Option
+    * Added XmppPinger class which sends an IQ PING packet (XMPP standard) every 5 minutes to the server, to keep the connection alive.
+
+ * Some UI changes
+
+ * Added Mute / Unmute menu options to quickly turn off sound notifications
+
+ * Added detection of S40 / S60 Nokia handsets to optimise menu options on both platforms
+
+ * Added "Global Preferences" which eases setting up new profiles with similar details
+
+ * A few bug fixes and low-level code optimisations
+	
 == v1.1.0 ==
 *Application Data NOT backwards compatible with v1.0.0*
 
-Either uninstall v1.0.0 then install v1.1.0 or answer "No" if 
-your phone prompts you to keep the existing application data
+Either uninstall v1.0.0 then install v1.1.0 or answer "No" if your phone prompts you to keep the existing application data
 
 === New Functionality ===
 		
