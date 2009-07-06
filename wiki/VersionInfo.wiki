@@ -4,7 +4,7 @@
 
 Here's how our version numbers work..
 
- * v X.Y.Z'[.a]'
+ * v X.Y.Z*[.a]
 
  * X = Major version - version 1 currently, version 2 would be a very significant change
  * Y = Minor version - something quite big changed, or we've introduced a significant new feature or changed quite a bit of code
