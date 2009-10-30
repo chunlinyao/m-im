@@ -1,0 +1,123 @@
+v1.4.0 - Added New Account Wizard to ease setting up your first GoogleTalk Account in m-im
+
+	News - m-im has been added to XMPP.org and Wikipedia's lists of mobile phone clients for Jabber/XMPP!
+
+v1.3.2 - Added translations to Chinese from Chunlin
+
+v1.3.1 - Update including better network error handling and internal code changes
+ 
+	I run my own IM servers, so I can do things such as kicking my phone off the server by forcibly closing the connection
+	As a result, I've discovered that the "Auto-Reconnect" options aren't working very gracefully
+	I have implemented some new logic for handling the automatic reconnection of the socket, which appears to be working
+	quite nicely. Once I'm happy it's stable and doesn't adversely affect anything, I'll merge and commit that change as 1.3.0
+	
+	It's probably a safe bet to do some translating if you get half a chance, as I doubt I'll add any new translations in 1.3.0
+	
+	Changes:
+	Added Log class to centralise calls to System.out etc
+	Changed XmppPinger class to use Constants to determine whether to ping every 30 seconds or 5 minutes (DEBUG related)
+	New logic in Jxa to handle disconnections more gracefully. If the server drops the connection, but the underlying network
+	stays up, this is now handled gracefully. If the network (Wifi etc) disconnects, this still resorts to a Symbian OS error on S60
+	A couple of code optimisations (removing unused variables etc)
+	
+	
+v1.2.0 - Updated release by Mark
+
+	** Application Data NOT backwards compatible with v1.1.0!!!
+	Either uninstall v1.1.0 then install v1.2.0 or answer "No" if 
+	your phone prompts you to keep the existing application data
+
+	* New translations required in this version
+
+	* New Keepalive Option
+	  - Added XmppPinger class which sends an IQ PING packet (XMPP standard) every 5 minutes to the server, to keep the connection alive.
+	
+	Refactor of TextBoxItem to allow optional captions - this allows us to hide the message above the create new message dialog
+
+	Added Constants class to be used later
+
+	Made GUIStore constructor private so nothing can instantiate it
+	
+	Added a couple of utility methods to AppStore for later usage
+	Added "isS40" and "isS60" methods to AppStore
+	
+	Used isS40 and isS60 methods in ContactListUI to determine whether to display "minimise" or "status" button
+	
+	Added mute/unmute and global prefs menu links	
+	
+	Added Global Preferences for:
+	Sounds On/Off (including mute/unmute support) - global override
+	Display Name (default picked up for new profiles)
+	Volume (default picked up for new profiles)
+	Vibrate Alert (default picked up for new profiles)
+	Vibration Time (default picked up for new profiles)
+
+	Removed Class NetworkDispatcher from the source tree
+
+	Added MIMConstants interface with default values defined as constants
+
+	Fixed a potential (it happened once or twice) NPE in processNewMessage() on UserList class 
+
+	Fixed a couple of UI consistency issues with capitalisation and colon usage in the English resources file
+	Externalised as many strings as I can find on the UI to ease future translations
+
+	According to Nokia Style Guidelines:
+	Commands can be grouped to postive (OK, ITEM, SCREEN, HELP) and negative (BACK, CANCEL, EXIT, STOP).
+	Nokia user interface guidelines and style positions negative operations like backward navigation to right softkey. 
+	Positive operations like forward navigation is in left or middle softkeys.
+	Double-checking that this is obeyed, MicroEmulator puts the text editing dialog buttons the opposite way of course!! 
+
+v1.1.0 - Updated release by Mark
+
+	** Application Data NOT backwards compatible with v1.0.0!!!
+	Either uninstall v1.0.0 then install v1.1.0 or answer "No" if 
+	your phone prompts you to keep the existing application data
+
+	New Functionality
+		
+		Customisable "Resource" property for XMPP connection
+		
+		Added "Display Name" to connection profile
+		
+		Added vibrate function for supported handsets (most)
+		
+		Minimise Support - allows running in the background
+		
+		Added user-friendly titles to all screens
+			- Chat with <Remote User Display Name> for ChatUI
+			- Profile Name for ContactListUI, rather than JID
+		
+		Changed right and left click buttons in Contact List and ChatUI
+		
+		Added menu with disconnect and quit options, and put "minimise" 
+		as right click option rather than disconnect
+		
+		Workaround: Added keypress options for 3,6,9 to increase volume 
+		and vibrate times as rightclick isn't working. 
+
+		Restricted port number dialog entry to numbers only
+
+	Known Issues
+		
+		Need to add a method "supportsBackgroundRunning()" which returns
+		true if the phone supports minimise/background running of J2ME
+		applications, and false otherwise. This can then be used to
+		determine whether minimise or another function is assigned
+		to the right screen key on the UI
+		
+		Still having connection timeout problems (intermittently)
+
+v1.0.0 - Initial Release uploaded to googlecode by chunlinyao
+	
+	Known Issues
+		
+		A few missing titles, and some UI Strings are hardcoded
+		
+		On S60, right joypad does not increase volume or vibrate time
+		on the slider control, but left click DOES decrease it!
+		
+		When contacts go offline, their status icon changes to red
+		(busy), rather than the grey cross (offline). This means it's
+		hard to distinguish if someone has gone to DND or offline
+		
+		"Error message" dialogue doesn't always dissappear properly
