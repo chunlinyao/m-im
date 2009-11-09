@@ -5,6 +5,8 @@
 This gives a high-level overview of the changes in each release
 
 = Details =
+== v1.5.0 ==
+ * rewrite xmpp protocol based on kxml.
 
 == v1.3.2 ==
 
